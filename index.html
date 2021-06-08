@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Information of Places on Maps</title>
+    <!-- link rel='stylesheet' href="main.css" -->
+</head>
+<body>
+    <h1>MAP</h1>
+    
+    <input
+      id="search"
+      class="controls"
+      type="text"
+      placeholder="Search Box"
+    />
+    <div id="map" style="width:1000px;height:1000px">
+    </div>
+
+    <div>
+        <p id="hover">Click here to add info about the place</p>
+        <input type="textarea" id="info">
+        <button onclick> submit </button>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    
+    <script src="app.js"></script>
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5wwuSxV3puDYGTnSZl8djOI3Q-jSzgq0&callback=initAutocomplete&libraries=places&v=weekly"
+      async defer
+    ></script>
+     
+
+    <!-- input type="textarea" id="info">
+    <button onclick> submit </button>
+    <button onclick> map </button -->
+
+</body>
+</html>
